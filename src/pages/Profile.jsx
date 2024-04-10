@@ -5,13 +5,24 @@ import GithubContact from "../media/GithubContact.png";
 import Linkedin from "../media/Linkedin.png";
 import Resume from "../media/Resume.png";
 import ContactIcon from "../components/ContactIcon";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
 
 export default function Profile() {
   const [about, setAbout] = useState(0);
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+  const [title,setTitle] = useState("Sobre Mí")
+
+  useEffect(()=>{
+    if (about  === 0){
+      setTitle("Sobre Mí")
+    }else if(about === 1){
+      setTitle("Mi stack")
+    }else{
+      setTitle("Contacto")
+    }
+  },[about])
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -62,9 +73,7 @@ export default function Profile() {
         {/* Me */}
         <motion.div className="h-full w-full px-5">
           <span className="2xl:text-3xl text-2xl font-semibold text-orange-400">
-            {about === 0 && "Sobre mí"}
-            {about === 1 && "Mi stack"}
-            {about === 2 && "Contacto"}
+            {title}
           </span>
           <div
             className={
