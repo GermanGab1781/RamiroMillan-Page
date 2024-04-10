@@ -23,9 +23,12 @@ export default function Home() {
             positivo
           </div>
         </div>
-        <div className="absolute z-10 bottom-2 left-1/2 transform -translate-x-1/2 rounded-md p-4 bg-orange-400 text-white font-bold">
-          Contactar
-        </div>
+        <a
+          href="mailto:ramirogmillan@gmail.com "
+          className="absolute z-10 bottom-2 left-1/2 transform -translate-x-1/2 rounded-md p-4 bg-orange-400 text-white font-bold"
+        >
+          Contacto
+        </a>
         <span className="bg-gradient-to-b from-slate-100 to-orange-500">
           <img
             className="opacity-85 md:h-auto h-[75vh]"
@@ -34,6 +37,7 @@ export default function Home() {
           />
         </span>
       </section>
+      {/*  */}
     </motion.div>
   );
 }

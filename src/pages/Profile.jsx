@@ -19,13 +19,6 @@ export default function Profile() {
       transition={{ duration: 0.3 }}
       className="xl:grid xl:grid-rows-2 xl:grid-cols-2 flex flex-col xl:gap-y-10 bg-white text-blue-900 max-w-screen min-h-screen pb-36 font-Montserrat"
     >
-      <Link
-        className="absolute md:top-10 top-5 md:left-5 text-blue-950 font-bold md:text-2xl"
-        to="/"
-      >
-        {" "}
-        ⏮ Volver
-      </Link>
       {/* Title */}
       <motion.div
         initial={
@@ -69,9 +62,9 @@ export default function Profile() {
         {/* Me */}
         <motion.div className="h-full w-full px-5">
           <span className="2xl:text-3xl text-2xl font-semibold text-orange-400">
-            {about === 0 && "About"}
-            {about === 1 && "My stack"}
-            {about === 2 && "Contact"}
+            {about === 0 && "Sobre mí"}
+            {about === 1 && "Mi stack"}
+            {about === 2 && "Contacto"}
           </span>
           <div
             className={
@@ -81,17 +74,12 @@ export default function Profile() {
             }
           >
             <div className="flex flex-col text-start">
-              <span>
-                I like to work in a team based enviorment learning from
-                everything and everyone.
-              </span>
-              <span>
-                Competitive in a healthy manner pushing to improve myself.
-              </span>
-              <span>
-                Independent, but ready to help others and ask for help if
-                needed.
-              </span>
+            Extenso conocimiento en tecnologías y constante aplicación en las
+              tareas que desempeño como ingeniero.
+              <br/>
+              Competencia en la toma de decisiones objetivas,
+              respaldada por la analítica de los datos.
+              <br /> 
             </div>
           </div>
 
@@ -103,14 +91,10 @@ export default function Profile() {
             }
           >
             <div className="flex flex-col text-start">
-              <span>
-                Capable understanding of programming techniques and common
-                logics.
-              </span>
-              <span>Advanced english, writing, speaking, etc.</span>
-              <span>
-                Clever usage of languages and libraries documentations.
-              </span>
+            Habilidad analítica y resolutiva, centrada en objetivos y
+              resultados.<br/>
+             Experiencia comprobable en Power BI, Python, SQL y SAS.
+              Inglés nivel B1.
             </div>
           </div>
 
@@ -160,7 +144,7 @@ export default function Profile() {
               }
               onClick={() => setAbout(0)}
             >
-              About me
+              Sobre mí
             </button>
             <button
               className={
@@ -170,7 +154,7 @@ export default function Profile() {
               }
               onClick={() => setAbout(1)}
             >
-              My stack
+              Mi stack
             </button>
             <button
               className={
@@ -180,7 +164,7 @@ export default function Profile() {
               }
               onClick={() => setAbout(2)}
             >
-              Contact/Resume
+              Contacto/Cv
             </button>
           </div>
         </motion.div>
