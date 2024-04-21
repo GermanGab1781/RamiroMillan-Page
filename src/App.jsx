@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/tablero" element={<Home/>}/>
-        <Route path="/" element={<Profile/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/perfil" element={<Profile/>}/>
       </Routes>
     </BrowserRouter>
   );

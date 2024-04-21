@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Perfil from "../media/Perfil.png";
 import Email from "../media/Email.png";
-import GithubContact from "../media/GithubContact.png";
 import Linkedin from "../media/Linkedin.png";
 import Resume from "../media/Resume.png";
 import ContactIcon from "../components/ContactIcon";
@@ -116,26 +115,26 @@ export default function Profile() {
           >
             <div className="flex flex-col text-start my-auto">
               <div className="flex flex-row mt-10 gap-x-3">
-                <ContactIcon
+                {/* <ContactIcon
                   link={"https://github.com/GermanGab1781"}
                   name="Github"
                   img={GithubContact}
-                />
+                /> */}
                 <ContactIcon
                   link={
-                    "https://drive.google.com/drive/folders/1mYA43BqnqKkW0BNrH9wuLwdnhcs66qZ3?usp=sharing"
+                    "https://drive.google.com/drive/u/1/folders/16vPSh9e_YwbFXiS0QpHtqnPGB5dZAK8E"
                   }
                   name="Resume"
                   img={Resume}
                 />
                 <ContactIcon
-                  link={"mailto:germangabriel1998@gmail.com"}
+                  link={"mailto:ramirogmillan@gmail.com"}
                   name="Email"
                   img={Email}
                 />
                 <ContactIcon
                   link={
-                    "https://www.linkedin.com/in/germ%C3%A1n-gabriel-9b3b1a160/"
+                    "https://www.linkedin.com/in/ramirogmillan/"
                   }
                   name="Linkedin"
                   img={Linkedin}
