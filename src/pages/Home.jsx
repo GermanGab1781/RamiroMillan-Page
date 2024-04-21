@@ -44,15 +44,15 @@ export default function Home() {
       </section>
       {/* App Example1 */}
       <section className="relative flex ">
-        <span className="bg-gradient-to-bl from-slate-100 to-transparent ml-10 rounded-xl">
+        <span className="bg-gradient-to-bl from-slate-100 to-transparent md:ml-10 ml-3 rounded-xl">
           <img
-            className="opacity-95 w-[70vw] h-[75vh] rounded-xl"
+            className="opacity-95 md:w-[70vw] w-[85vw] md:h-[75vh] h-[60vh] rounded-xl"
             alt="Tipos de filtraciones de los datos en el tablero"
             src={ExampleImg2}
           />
         </span>
         <div
-          className="absolute z-10 md:top-1/2 top-1/4 md:right-3 right-1/2 transform rounded-xl md:-translate-y-1/2 -translate-y-auto md:-translate-x-0 -translate-x-1/2  md:text-4xl text-2xl md:w-1/2 w-[85%] md:text-start text-center p-6 
+          className="absolute z-10 md:top-1/2 top-1/3 md:right-3  transform rounded-xl md:-translate-y-1/2 -translate-y-auto md:-translate-x-0   md:text-4xl text-2xl md:w-1/2 w-[95%] text-start p-6 
         bg-gradient-to-l  from-transparent  to-orange-500 bg-orange-600 bg-opacity-60 "
         >
           <div className="font-bold text-blue-600">Tablero dinamico</div>
@@ -60,15 +60,15 @@ export default function Home() {
       </section>
       {/* App Example 2 */}
       <section className="relative flex place-content-end mt-10">
-        <span className="bg-gradient-to-tl from-slate-100 to-transparent mr-10 rounded-xl">
+        <span className="bg-gradient-to-tl from-slate-100 to-transparent md:mr-10 mr-3 rounded-xl">
           <img
-            className="opacity-95 w-[70vw] h-[75vh] rounded-xl "
+            className="opacity-95 md:w-[70vw] w-[85vw] md:h-[75vh] h-[60vh] rounded-xl "
             alt="Vista principal del tablero"
             src={ExampleImg1}
           />
         </span>
         <div
-          className="absolute z-10 md:top-1/2 top-1/4 md:left-3  left-1/2 transform rounded-xl md:-translate-y-1/2 -translate-y-auto md:-translate-x-0 -translate-x-1/2  md:text-4xl text-2xl md:w-1/2 w-[85%] md:text-end text-center p-6 
+          className="absolute z-10 md:top-1/2 top-1/4 md:left-3  left-1/2 transform rounded-xl md:-translate-y-1/2 -translate-y-auto md:-translate-x-0 -translate-x-1/2  md:text-4xl text-2xl md:w-1/2 w-[95%] text-end p-6 
         bg-gradient-to-r from-transparent  to-orange-500 bg-orange-600 bg-opacity-60 "
         >
           <div className="font-bold text-blue-600">Vista principal</div>
