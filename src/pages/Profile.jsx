@@ -27,7 +27,7 @@ export default function Profile() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className="xl:grid xl:grid-rows-2 xl:grid-cols-2 flex flex-col xl:gap-y-10 bg-white text-blue-900 max-w-screen min-h-screen pb-36 font-Montserrat"
+      className="md:grid md:grid-rows-2 md:mt-0 mt-20 md:grid-cols-2 flex flex-col md:gap-y-10 bg-white text-blue-900 max-w-screen min-h-screen pb-36 font-Montserrat"
     >
       {/* Title */}
       <motion.div
@@ -38,12 +38,12 @@ export default function Profile() {
         }
         animate={isMobile ? { y: 0, scale: 1 } : { x: 0, y: 0, scale: 1 }}
         transition={{ delay: 1, duration: 3 }}
-        className="mx-auto xl:col-start-1 flex flex-col xl:h-full h-1/2 2xl:ml-20 2xl:mt-20 xl:ml-16 xl:mt-16 place-content-center text-center"
+        className="mx-auto md:mb-0 mb-10 md:col-start-1 flex flex-col md:h-full h-1/2 2md:ml-20 2md:mt-20 md:ml-16 md:mt-16 place-content-center text-center"
       >
-        <span className="2xl:text-8xl xl:text-7xl text-2xl font-bold">
+        <span className=" md:text-7xl text-2xl font-bold">
           Ramiro Millan
         </span>
-        <span className="2xl:text-6xl xl:text-5xl text-xl  text-orange-400">
+        <span className="2md:text-6xl md:text-5xl text-xl  text-orange-400">
           Data Analyst
         </span>
       </motion.div>
@@ -53,7 +53,7 @@ export default function Profile() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 3.5, duration: 0.3 }}
-        className=" xl:h-full xl:w-10/12 h-64 xl:row-start-1 xl:row-end-3 xl:m-auto xl:mt-10"
+        className=" md:h-full md:w-10/12 h-64 md:row-start-1 md:row-end-3 md:m-auto md:mt-10"
       >
         <img
           className="bg-orange-400 py-1 h-full w-[80%] shadow-lg shadow-orange-400 rounded-md m-auto"
@@ -67,17 +67,17 @@ export default function Profile() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 3.5, duration: 0.3 }}
-        className=" xl:row-start-2 xl:col-start-1 xl:grid xl:grid-cols-2 h-full w-full text-center xl:mx-auto m-auto xl:ml-16 mt-5 xl:gap-x-2 place-content-center"
+        className=" md:row-start-2 md:col-start-1 md:grid md:grid-cols-2 h-full w-full text-center md:mx-auto m-auto md:ml-16 mt-5 md:gap-x-2 place-content-center"
       >
         {/* Me */}
         <motion.div className="h-full w-full px-5">
-          <span className="2xl:text-3xl text-2xl font-semibold text-orange-400">
+          <span className="2md:text-3xl text-2xl font-semibold text-orange-400">
             {title}
           </span>
           <div
             className={
               about === 0
-                ? "relative m-auto xl:h-48"
+                ? "relative m-auto md:h-48"
                 : "opacity-0 absolute invisible"
             }
           >
@@ -94,7 +94,7 @@ export default function Profile() {
           <div
             className={
               about === 1
-                ? "relative m-auto xl:h-48"
+                ? "relative m-auto md:h-48"
                 : "opacity-0 absolute invisible"
             }
           >
@@ -109,7 +109,7 @@ export default function Profile() {
           <div
             className={
               about === 2
-                ? "relative m-auto xl:h-48 visible"
+                ? "relative m-auto md:h-48 visible"
                 : "opacity-0 absolute invisible"
             }
           >

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { showAlert } from "../utils/SwalContact";
 
 export default function Navbar() {
   return (
@@ -14,7 +15,7 @@ export default function Navbar() {
         Ramiro Millan
       </Link>
       <span className="flex gap-x-3 place-items-center md:text-xl text-md">
-        <a className="font-bold text-orange-400" href="mailto:ramirogmillan@gmail.com">Contacto</a>
+        <span onClick={showAlert} className="font-bold text-orange-400 cursor-pointer">Contacto</span>
         <Link to="/perfil" className="font-bold text-blue-950">
           Mi perfil
         </Link>
